@@ -1,0 +1,15 @@
+
+<div class="container">
+      <h1>
+        ГОРОД ОБСУЖДАЕТ
+      </h1>
+             <button class="btn"
+            type="button" *ngFor="let cat of categories"
+            (click)="onSelect(cat)"
+            [class.selected]="cat.title===selectedCategory">
+                  {{cat.title}}
+            </button>
+</div>
+
+<app-problem-detail [category]="selectedCategory"></app-problem-detail>
+<app-complaints></app-complaints>

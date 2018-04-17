@@ -1,0 +1,26 @@
+
+<div class="container">
+      <h1>
+            ГОРОД ВЫБИРАЕТ
+      </h1>
+
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15" [styles]="styles">
+        <agm-marker *ngFor="let point of points"
+        [latitude]="getLat(point.geometry.coordinates)"
+        [longitude]="getLon(point.geometry.coordinates)"
+        (markerClick)="onSelect(point)"
+        [openInfoWindow]="false"
+        [iconUrl]="getIcon(point.properties.id)">
+
+            <agm-info-window
+            [isOpen]="point===selectedPoint"
+            class="info"
+
+            >
+                  <div class="inline"><img src="{{getSrc(point.properties.photo)}}" width="100" height="100"></div><!--
+                  --><div class="inline"><p>{{point.properties.desc}}</p></div>
+
+            </agm-info-window>
+        </agm-marker>
+  </agm-map>
+</div>

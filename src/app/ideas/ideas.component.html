@@ -1,0 +1,22 @@
+<div class="container">
+      <h1>
+            ГОРОД ПРЕДЛАГАЕТ
+      </h1>
+      <h5>
+            Идеи жителей
+      </h5>
+      <div *ngFor="let idea of ideas" class="idea">
+            <div [style.background]="'url('+idea.image+')'"
+            class="image"
+            [style.backgroundSize]="cover">
+                  <div class="shadow">
+                        <h2>
+                              {{idea.title}}
+                        </h2>
+                        <div class="description">
+                              {{idea.description}}
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>

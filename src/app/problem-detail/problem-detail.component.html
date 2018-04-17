@@ -1,0 +1,29 @@
+<div class="container">
+      <h5>
+            Распределение сообщений в зависимости от времени
+      </h5>
+      <svg width = "1040" height = "140">
+            <ng-container *ngFor="let score of scores">
+                  <rect (click)="onSelect(score)"
+                  [attr.x]="getX(score.day, score.month)"
+                  [attr.y]="getY(score.day)"
+                  width = "15" height = "15"
+                  [attr.fill]="getColor(score.score)">
+                  </rect>
+            </ng-container>
+      </svg>
+      <div>
+            <small>Jan</small>
+            <small>Feb</small>
+            <small>Mar</small>
+            <small>Apr</small>
+            <small>May</small>
+            <small>Jun</small>
+            <small>Jul</small>
+            <small>Aug</small>
+            <small>Sep</small>
+            <small>Oct</small>
+            <small>Nov</small>
+            <small>Dec</small>
+      </div>
+</div>

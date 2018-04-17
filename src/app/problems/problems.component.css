@@ -1,0 +1,17 @@
+button {
+      padding: 5px;
+      margin-right: 20px;
+      margin-top: 50px;
+      margin-bottom: 40px;
+      width: 180px;
+      border-radius:0;
+      background-color: green;
+}
+
+h1 {
+      paddin-bottom: 50px;
+}
+
+* {
+      padding-top: 50px;
+}

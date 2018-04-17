@@ -1,0 +1,19 @@
+<div class="container">
+      <h5>
+            Планы мэрии
+      </h5>
+      <div *ngFor="let plan of plans" class="plan">
+            <div [style.background]="'url('+plan.image+')'"
+            class="image"
+            [style.backgroundSize]="cover">
+                  <div class="shadow">
+                        <h2>
+                              {{plan.title}}
+                        </h2>
+                        <div class="description">
+                              {{plan.description}}
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>

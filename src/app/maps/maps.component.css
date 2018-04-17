@@ -1,0 +1,28 @@
+.container {
+      padding-top: 100px;
+}
+
+agm-map {
+  height: 600px;
+}
+
+p {
+      color: black;
+      width: 200px;
+}
+
+.title {
+      color: black;
+}
+
+.inline {
+      display: inline-block;
+      padding: 10px;
+      height: 100px;
+      overflow-y: hidden;
+}
+
+.info {
+      background-color: blue;
+      width: 150px;
+}

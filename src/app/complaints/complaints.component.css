@@ -1,0 +1,38 @@
+.complaint {
+      padding: 40px;
+      border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+.name {
+      font-weight: bold;
+      color: green;
+}
+
+.solved {
+      color: #42A5F5;
+}
+
+.active {
+      color: #66BB6A;
+}
+
+.suspended {
+      color: #EF5350;
+}
+
+.Waiting {
+      background-color: #FFA726;
+}
+
+small {
+      color: rgba(255,255,255,0.6);
+}
+
+.status {
+      padding: 10px;
+      float: right;
+}
+
+* {
+      padding-top: 50px;
+}

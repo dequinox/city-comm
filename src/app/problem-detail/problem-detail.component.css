@@ -1,0 +1,13 @@
+.container {
+      padding: 5px;
+}
+svg {
+      padding: 3px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius:2px;
+}
+
+small {
+      padding: 31px;
+      color: rgba(255,255,255,0.6);
+}

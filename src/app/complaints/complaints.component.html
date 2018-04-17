@@ -1,0 +1,12 @@
+<div class="container">
+      <h5>
+            Сообщения на основе анализа чата Супер Иннополис
+      </h5>
+      <div *ngFor="let complaint of complaints" class="complaint">
+            <span class="name">{{complaint.name}}</span>
+            <small>{{complaint.data}}</small>
+            <span class="status">{{complaint.status}}</span>
+            <span class="status">{{complaint.symbol}}</span>
+            <div>{{complaint.text}}</div>
+      </div>
+</div>

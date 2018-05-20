@@ -3,11 +3,14 @@
       <h1>
         ГОРОД ОБСУЖДАЕТ
       </h1>
+      <h4>
+            Наиболее обсуждаемые темы на основе анализа данных из чатов
+      </h4>
              <button class="btn"
             type="button" *ngFor="let cat of categories"
             (click)="onSelect(cat)"
             [class.selected]="cat.title===selectedCategory">
-                  {{cat.title}}
+                  {{cat.title | uppercase}}
             </button>
 </div>
 

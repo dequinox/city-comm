@@ -1,12 +1,17 @@
 .main {
-      background-image: url("assets/MAP3.png");
+      background-image: url("assets/MAP7.png");
       background-size: cover;
       background-repeat:   no-repeat;
       background-position: center center;
       height: 1000px;
 }
+
 h1 {
-      padding: 20px;
-      font-size: 5em;
-      font-weight: bolder;
+}
+
+h4 {
+}
+
+.container {
+      padding-top: 50px;
 }

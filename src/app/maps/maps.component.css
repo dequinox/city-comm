@@ -1,9 +1,16 @@
-.container {
-      padding-top: 100px;
+.topbar {
+      position: absolute;
+      z-index: 1;
+      background-color: rgba(51,51,51,0.5);
+      width: 100%;
+}
+h1 {
+      font-weight: bolder;
+      padding-top: 20px;
 }
 
 agm-map {
-  height: 400px;
+  height: 700px;
 }
 
 p {

@@ -3,15 +3,9 @@ button {
       margin-right: 20px;
       margin-top: 50px;
       margin-bottom: 40px;
-      width: 180px;
       border-radius:0;
       background-color: #008744;
 }
-
-h1 {
-      paddin-bottom: 50px;
-}
-
-* {
+.container {
       padding-top: 50px;
 }
